@@ -1,0 +1,33 @@
+body {
+    color: #fff;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+nav a {
+    background: #000;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.brand {
+    text-align: center;
+}
+
+.krug {
+    border-radius: 50%;
+
+}
+
+.krugovi-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

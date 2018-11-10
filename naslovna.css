@@ -1,0 +1,113 @@
+.pozadina {
+    background-image: url("pozadina.jpg");
+    background-position: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9; 
+    height: 100vh;
+}
+.wrapper {
+    margin: 0 2%;
+}
+nav {
+    margin-bottom: 20px;
+    background:black;
+    opacity: 0.9;
+}
+
+.content {
+    background-color: grey;
+    padding: 2%;
+    max-height: 90vh;
+    opacity: 0.8;
+}
+
+h1, h2 {
+    color: black;
+    text-align: center;
+    margin: 0;
+}
+h2 {
+    padding: 15px 0;
+}
+.naslovi {
+    background-color: white;
+    opacity: 0.9;
+}
+
+.slika {
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+}
+footer {
+    background: yellow;
+    color: black;
+    text-align: center;
+    margin: 5px;
+    padding: 5px; 
+}
+
+.red-dugme {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.text-dugme {
+    padding: 30px;
+    font-size: 1.5em;
+}
+.dugme {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: yellow;
+    font-weight: 900;
+   font-size: 1.2em;
+}
+
+
+
+@media (min-width: 768px){
+    body {
+        font-size: 1.2em
+    }
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    }
+    nav a:hover {
+        color: yellow;
+        border-bottom: 2px solid yellow;
+    }
+    .content {
+        position: relative;
+        top: 100px;
+    }
+    .flex {
+        display: flex;
+    }
+    .proizvodi {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+    }
+    .dugme {
+        width: 200px;
+        height: 200px;
+        font-size: 2em;
+    }
+}
+@media (min-width: 1320px){
+    body {
+        font-size: 1.4em
+    }
+    .proizvodi {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .text-dugme {
+        font-size: 2em;
+    }
+}

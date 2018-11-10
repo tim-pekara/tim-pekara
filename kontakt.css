@@ -1,0 +1,101 @@
+body {
+
+    color: #fff;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    background-image: url("pozadina.jpg");
+            background-position: fixed;
+            background-repeat: no-repeat;
+            opacity: 0.9; 
+            height: 100%;
+    }
+    iframe {
+        max-width: 100%;
+    }
+    img {
+        max-width: 100%;
+    }
+    nav a {
+        background: #000;
+        color: #fff;
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        text-align: center;
+        }
+        .wrapper {
+            margin: 0 2%;
+        }
+        nav {
+            margin-bottom: 20px;
+            background:black;
+            opacity: 0.9;
+        }
+        
+        .content {
+            background-color: grey;
+            padding: 2%;
+            max-height: 90vh;
+            opacity: 0.8;
+        }
+        
+        h1, h2 {
+            color: black;
+            text-align: center;
+            margin: 0;
+        }
+        h2 {
+            padding: 15px 0;
+        }
+        footer {
+            background: yellow;
+            color: black;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        
+        
+        @media (min-width: 768px){
+            body {
+                font-size: 1.2em;
+                
+            }
+            .pozadina {
+                background-image: url("pozadina.jpg");
+            }
+            nav {
+                display: flex;
+                justify-content: space-evenly;
+                position: fixed;
+                width: 100%;
+                z-index: 1;
+            }
+            nav a:hover {
+                color: yellow;
+                border-bottom: 2px solid yellow;
+            }
+            .wrapper{
+                display: flex;
+                max-width: 100%;
+            }
+            .content {
+                position: relative;
+                top: 100px;
+                width: 100%;
+            }
+            footer {
+                margin-top: 100px;
+            }
+        }
+        @media (min-width: 1320px){
+            body {
+                font-size: 1.4em
+            }
+            .proizvodi {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+            .text-dugme {
+                font-size: 2em;
+            }
+        }
